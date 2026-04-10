@@ -1,33 +1,66 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif; /* A more modern font for logistics */
   margin: 0;
   padding: 0;
+  color: #333;
 }
+
 header {
-  background: #003366;
+  /* Use the dark tone from your logo for the header */
+  background: #1A1A1A; 
   color: white;
-  padding: 1em;
+  padding: 1.5em;
+  border-bottom: 4px solid #FF4C4C; /* Adding the Brand Red as a highlight */
 }
+
 nav a {
-  margin: 0 1em;
+  margin: 0 1.2em;
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
+nav a:hover {
+  color: #39FF14; /* Hovering over links shows the Brand Green */
+}
+
 .hero {
-  background: #f4f4f4;
-  padding: 2em;
+  background: #f9f9f9;
+  padding: 4em 2em; /* More padding for a premium feel */
   text-align: center;
 }
+
+.hero h2 {
+  color: #1A1A1A;
+}
+
 button {
-  background: #003366;
+  /* Buttons should use the Brand Red to drive action */
+  background: #FF4C4C; 
   color: white;
-  padding: 0.5em 1em;
+  padding: 0.8em 2em;
   border: none;
+  border-radius: 4px; /* Slightly rounded for a modern look */
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
+
+button:hover {
+  background: #e60000; /* Darkens the red slightly on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 footer {
-  background: #003366;
-  color: white;
+  background: #1A1A1A;
+  color: #999;
   text-align: center;
-  padding: 1em;
+  padding: 2em;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin: 0;
 }
