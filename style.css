@@ -1,69 +1,55 @@
-/* Container for consistent page width */
+/* Keeps the page content from getting too wide */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
-header {
-  background: #1A1A1A;
-  color: white;
-  padding: 1.5rem 0;
-  border-bottom: 4px solid #FF4C4C;
+/* Forces everything in the header onto one line */
+.header-flex {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: space-between; /* Pushes logo left, nav right */
+  align-items: center;           /* Centers them vertically */
+  padding: 10px 0;
 }
 
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px; /* Space between logo and text */
 }
 
 .logo-area img {
-  height: 55px; /* Proper size for a professional header */
+  height: 45px; /* Resized to look 'proper' on one line */
   width: auto;
 }
 
 .brand-text h1 {
+  font-size: 1.4rem;
   margin: 0;
-  font-size: 1.8rem;
   line-height: 1;
-  color: white;
 }
 
 .brand-text p {
+  font-size: 0.75rem;
   margin: 0;
-  font-size: 0.8rem;
-  color: #39FF14; /* Brand Green for the subtitle */
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: #39FF14; /* Brand Green */
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
   font-size: 0.9rem;
-  transition: color 0.3s;
+  white-space: nowrap; /* Prevents links from breaking into two lines */
 }
 
-nav a:hover {
-  color: #39FF14;
-}
-
-.track-link {
-  border: 1px solid #39FF14;
-  padding: 5px 15px;
-  border-radius: 4px;
+/* Mobile Responsive: Stacks only when screen is very small */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
