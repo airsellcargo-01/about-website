@@ -70,6 +70,62 @@
     font-weight: bold;
     border-bottom: 3px solid #b71c1c; /* Adds depth */
 }
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('logistics-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero__content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    border-bottom: 5px solid var(--brand-yellow); /* Your brand yellow */
+    display: inline-block;
+}
+
+/* Quick Track Section */
+.quick-track {
+    background: white;
+    max-width: 800px;
+    margin: -50px auto 50px; /* Pulls it up into the hero section */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.track-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.track-input {
+    flex: 2;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.track-btn {
+    flex: 1;
+    background-color: var(--brand-red); /* Your brand red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .main-footer {
     background-color: #2C3E50; /* Professional Charcoal */
     color: #FFFFFF;
