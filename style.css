@@ -70,7 +70,63 @@
     font-weight: bold;
     border-bottom: 3px solid #b71c1c; /* Adds depth */
 }
+.main-footer {
+    background-color: #2C3E50; /* Professional Charcoal */
+    color: #FFFFFF;
+    padding: 50px 5% 20px;
+    margin-top: 50px;
+    border-top: 5px solid #FBC02D; /* Your branding yellow */
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Important for mobile devices */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #FBC02D;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+    padding-left: 5px; /* Subtle movement effect */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #3e4f5f;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+}
 .menu__btn:hover {
     background-color: #b71c1c;
     transform: translateY(-1px);
