@@ -6,20 +6,6 @@
     <title>Airsell Cargo | Dashboard</title>
     <!-- This line connects your CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="main-header">
-        <div class="logo">Airsell Cargo</div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li><a href="#" class="nav__link">Dashboard</a></li>
-                <li><a href="#" class="nav__link">Shipments</a></li>
-                <li><a href="#" class="nav__link">Manifests</a></li>
-            </ul>
-        </nav>
-    </header>
-
    <header class="main-header">
     <div class="header-container">
         <!-- Brand Identity -->
@@ -39,6 +25,29 @@
         </nav>
     </div>
 </header>
+    <!-- Main Index Content -->
+<main class="index-page">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1>Global Logistics, Local Expertise</h1>
+            <p>Your trusted non-IATA freight forwarding partner in Somaliland. Modernizing cargo services from Hargeisa to the world.</p>
+            <div class="hero__actions">
+                <a href="#tracking" class="btn btn--primary">Track Shipment</a>
+                <a href="#quote" class="btn btn--secondary">Request a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipment Dashboard Snippet -->
+    <section id="tracking" class="quick-track">
+        <h2>Quick Tracking</h2>
+        <div class="track-box">
+            <input type="text" placeholder="Enter MAWB Number (e.g., 071-12345678)" class="track-input">
+            <button class="track-btn">Track Now</button>
+        </div>
+    </section>
+</main>
 <footer class="main-footer">
     <div class="footer-container">
         <!-- Section 1: Brand & Bio -->
