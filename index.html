@@ -3,52 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airsell Cargo | Manifest Portal</title>
+    <title>Airsell Cargo | Dashboard</title>
+    <!-- This line connects your CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- <header class="main-header">
-    <!-- Brand Identity -->
-    <div class="logo">Airsell Cargo</div>
+    <header class="main-header">
+        <div class="logo">Airsell Cargo</div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="#" class="nav__link">Dashboard</a></li>
+                <li><a href="#" class="nav__link">Shipments</a></li>
+                <li><a href="#" class="nav__link">Manifests</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Main Navigation -->
-    <nav class="nav">
-        <ul class="nav__list">
-            <li><a href="index.html" class="nav__link nav__link--active">Dashboard</a></li>
-            <li><a href="shipments.html" class="nav__link">Shipments</a></li>
-            <li><a href="manifests.html" class="nav__link">Manifests</a></li>
-        </ul>
-    </nav>
-
-    <!-- Professional Actions -->
-    <div class="header__actions">
-        <div class="search-container">
-            <input type="text" placeholder="Track AWB..." class="search-input">
+    <main class="dashboard-container">
+        <h1>Current Shipments</h1>
+        
+        <div class="shipment-card">
+            <div class="shipment-card__header">
+                <span class="awb-number">MAWB: 071-12345678</span>
+                <span class="status-badge">In Transit</span>
+            </div>
+            <div class="shipment-card__details">
+                <p><strong>Origin:</strong> HGA (Hargeisa)</p>
+                <p><strong>Destination:</strong> DXB (Dubai)</p>
+            </div>
+            <button class="btn-primary">View Manifest</button>
         </div>
-        <a href="login.html" class="btn-login">Staff Portal</a>
-    </div>
-</header>
-
-    <main class="dashboard">
-        <section class="status-panel">
-            <h1 class="status-panel__title">Current Shipments</h1>
-            
-            <!-- Individual Tracking Card -->
-            <article class="card card--active">
-                <div class="card__header">
-                    <span class="card__id">MAWB: 071-12345678</span>
-                    <span class="card__status badge--green">In Transit</span>
-                </div>
-                <div class="card__body">
-                    <p><strong>Origin:</strong> HGA (Hargeisa)</p>
-                    <p><strong>Destination:</strong> DXB (Dubai)</p>
-                </div>
-                <div class="card__footer">
-                    <button class="btn btn--primary">View Manifest</button>
-                </div>
-            </article>
-        </section>
     </main>
 
 </body>
