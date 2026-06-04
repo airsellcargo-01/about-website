@@ -22,15 +22,21 @@ $conn->close();
   <link rel="stylesheet" href="style.css">
   <style>
     body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; }
-    header { background: #d32f2f; color: #fff; padding: 15px; text-align: center; }
-    .container { padding: 30px; }
+    header { background: #d32f2f; color: #fff; padding: 15px; text-align: center; position: relative; }
+    .container { padding: 30px; display: flex; flex-wrap: wrap; justify-content: center; }
     .card {
       background: #fff; border-radius: 8px; padding: 20px; margin: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; width: 250px; text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 250px; text-align: center;
     }
     h2 { margin: 0; color: #333; }
     .logout { position: absolute; top: 15px; right: 20px; }
     .logout a { color: #fff; text-decoration: none; }
+    .nav-links { margin-top: 40px; text-align: center; }
+    .nav-links a {
+      display: inline-block; margin: 10px; padding: 12px 24px;
+      background: #d32f2f; color: #fff; text-decoration: none; border-radius: 4px;
+    }
+    .nav-links a:hover { background: #b71c1c; }
   </style>
 </head>
 <body>
@@ -51,6 +57,11 @@ $conn->close();
       <h2><?php echo $pending_requests; ?></h2>
       <p>Pending Client Requests</p>
     </div>
+  </div>
+  <div class="nav-links">
+    <a href="shipments.php">View Shipments</a>
+    <a href="manifests.php">View Manifests</a>
+    <a href="requests.php">Manage Client Requests</a>
   </div>
 </body>
 </html>
